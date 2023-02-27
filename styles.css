@@ -1,4 +1,98 @@
 body{
     font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px
+
+}
+.general-container{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    margin: 0;
+    display: flex;
+    width: 650px;
+    height: 60vh;
+}
+.picture{
+    width: 50%;
+    height: 100%;
+}
+.picture>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+/*     object-fit: fill; */
+}
+.preview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: hsl(0, 0%, 100%);
+    border-radius:  0 8px 8px 0;
+    padding: 20px 32px 32px 32px;
+    box-sizing: border-box;
+}
+.subtitle{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    align-self: flex-start;
+}
+.title{
+    font-size: 2rem;
+    color:hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    line-height: 2rem;
+    padding-right: 20px;
+}
+.description{
+    color:hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    padding-right: 24px;
+
+}
+.pricing{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.price{
+   color:hsl(158, 36%, 37%);
+   font-family: 'Fraunces';
+   font-size: 2rem; 
+}
+.base-price{
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    align-self: center;
+    margin-left: 20px;
+}
+.add-to-cart{
+    border: none;
+    display: flex;
+    justify-content:center;
+    background-color:hsl(158, 36%, 37%);
+    border-radius: 12px;
+    width: 100%;
+}
+.add-to-cart img{
+    align-self: center;
+    margin-right: 20px;
+}
+.add-to-cart p{
+    color : hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+.add-to-cart:hover{
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
 }
