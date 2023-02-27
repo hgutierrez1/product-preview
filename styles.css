@@ -101,6 +101,7 @@ body{
         flex-direction: column;
         width: 95vw;
         height: 95vh;
+        margin-right: 12px;
     }
     .picture{
         width: 100%;
