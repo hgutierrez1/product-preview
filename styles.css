@@ -8,8 +8,7 @@ body{
 .general-container{
     margin: 0;
     display: grid;
-    place-items: center;
-    
+    place-items: center; 
     width: 100vw;
     height: 100vh;
 }
@@ -27,7 +26,6 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 8px 0 0 8px;
-/*     object-fit: fill; */
 }
 .preview{
     display: flex;
@@ -46,6 +44,8 @@ body{
     font-family: 'Montserrat';
     font-weight: 500;
     align-self: flex-start;
+    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
 }
 .title{
     font-size: 2rem;
@@ -95,4 +95,37 @@ body{
 }
 .add-to-cart:hover{
     background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+@media(max-width:376px){
+    .content{
+        flex-direction: column;
+        width: 95vw;
+        height: 95vh;
+    }
+    .picture{
+        width: 100%;
+        height: 40%;
+    }
+    .picture img{
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .preview{
+        width: 100%;
+        height: 60%;
+        border-radius: 0 0 8px 8px;
+    }
+    .title{
+        padding-right: 0;
+    }
+    .description{
+        padding-right:0;
+        margin-bottom: 0;
+    }
+    .pricing{
+        height: 20%;
+    }
+    .price{
+        align-self: center;
+    }
 }
